@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Pin From Net: NetName=GND Pin=MH2-1
+Removed Pin From Net: NetName=GND Pin=MH3-1
+Added Component: Designator=MH?(MH_7.4MMC_3.2MMD_NO_COPPER_NPTH)
+Added Component: Designator=MH?(MH_7.4MMC_3.2MMD_NO_COPPER_NPTH)
+Added Component: Designator=MH?(MH_7.4MMC_3.2MMD_NO_COPPER_NPTH)

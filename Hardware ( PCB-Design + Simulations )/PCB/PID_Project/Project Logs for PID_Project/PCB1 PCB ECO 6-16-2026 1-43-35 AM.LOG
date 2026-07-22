@@ -1,0 +1,4 @@
+Added Component: Designator=Socket1(Female_headers)
+Added Component: Designator=Socket2(Female_headers)
+Added Member To Class: ClassName=Sheet1 Member=Component Socket1 Female_Headers_FOR_MCU
+Added Member To Class: ClassName=Sheet1 Member=Component Socket2 Female_Headers_FOR_MCU

@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=SCL Pin=U1-J3_3
+Added Pin To Net: NetName=SCL Pin=U2-SCL
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=U1-J3_6
+Added Pin To Net: NetName=SDA Pin=U2-SDA
+Added Net: Name=SDA

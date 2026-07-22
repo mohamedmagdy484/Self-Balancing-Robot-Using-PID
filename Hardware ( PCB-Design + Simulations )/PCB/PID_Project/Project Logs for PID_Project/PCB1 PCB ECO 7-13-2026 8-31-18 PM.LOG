@@ -1,0 +1,24 @@
+Added Pin To Net: NetName=DIR_LEFT Pin=U1-J2_9
+Added Pin To Net: NetName=DIR_LEFT Pin=U3-8
+Added Net: Name=DIR_LEFT
+Added Pin To Net: NetName=DIR_RIGHT Pin=U1-J2_12
+Added Pin To Net: NetName=DIR_RIGHT Pin=U4-8
+Added Net: Name=DIR_RIGHT
+Added Pin To Net: NetName=M0 Pin=U1-J3_8
+Added Pin To Net: NetName=M0 Pin=U3-2
+Added Pin To Net: NetName=M0 Pin=U4-2
+Added Net: Name=M0
+Added Pin To Net: NetName=M1 Pin=U1-J3_9
+Added Pin To Net: NetName=M1 Pin=U3-3
+Added Pin To Net: NetName=M1 Pin=U4-3
+Added Net: Name=M1
+Added Pin To Net: NetName=M2 Pin=U1-J3_10
+Added Pin To Net: NetName=M2 Pin=U3-4
+Added Pin To Net: NetName=M2 Pin=U4-4
+Added Net: Name=M2
+Added Pin To Net: NetName=STEP_LEFT Pin=U1-J2_10
+Added Pin To Net: NetName=STEP_LEFT Pin=U3-7
+Added Net: Name=STEP_LEFT
+Added Pin To Net: NetName=STEP_RIGHT Pin=U1-J2_11
+Added Pin To Net: NetName=STEP_RIGHT Pin=U4-7
+Added Net: Name=STEP_RIGHT

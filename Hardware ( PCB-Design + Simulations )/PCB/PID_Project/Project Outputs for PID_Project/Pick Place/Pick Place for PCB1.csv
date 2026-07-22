@@ -1,0 +1,41 @@
+Altium Designer Pick and Place Locations
+D:\Project-Summer\PCB\PID_Project\Project Outputs for PID_Project\Pick Place\Pick Place for PCB1.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       22/07/26
+Time:       12:05
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"J11","MHDR_4PINS","TopLayer","MHDR_4PINS","3728.347","1612.402","270",""
+"C5","0.33µF","TopLayer","CAP_0.1UF","2129.457","1978.906","0",""
+"C4","0.1µF","TopLayer","CAP_0.1UF","1639.197","1978.906","0",""
+"C3","2200µF","TopLayer","CAP_2200UF","1071.866","1879.921","0",""
+"C2","CAP 100µF","TopLayer","CAP_1µF","1222.441","811.024","0",""
+"C1","CAP 100µF","TopLayer","CAP_1µF","1218.504","421.260","0",""
+"MH3","MH_7.4MMNC_3.2MMD (NO COPPER-NPTH)","TopLayer","MH_7.4MMC_3.2MMD_NO_COPPER_NPTH","157.480","157.480","0",""
+"MH1","MH_7.4MMNC_3.2MMD (NO COPPER-NPTH)","TopLayer","MH_7.4MMC_3.2MMD_NO_COPPER_NPTH","3778.898","2598.220","0",""
+"MH2","MH_7.4MMNC_3.2MMD (NO COPPER-NPTH)","TopLayer","MH_7.4MMC_3.2MMD_NO_COPPER_NPTH","3778.898","157.276","0",""
+"S1","Switch","TopLayer","SWITCH","277.559","2057.086","270",""
+"J10","Fuse_Holder","TopLayer","FUSE_HOLDER","620.079","1271.653","0",""
+"Socket2","Female_Headers_FOR_MCU","TopLayer","FEMALE_HEADERS","-1968.504","-1968.504","270",""
+"Socket1","Female_Headers_FOR_MCU","TopLayer","FEMALE_HEADERS","-1968.504","-1968.504","270",""
+"J9","Female_Headers_Stepper","TopLayer","FEMALE_STEPPER","-1968.504","-1968.504","180",""
+"J8","Female_Headers_Stepper","TopLayer","FEMALE_STEPPER","-1968.504","-1968.504","180",""
+"J7","Female_Headers_Stepper","TopLayer","FEMALE_STEPPER","-1968.504","-1968.504","180",""
+"J6","Female_Headers_Stepper","TopLayer","FEMALE_STEPPER","-1968.504","-1968.504","180",""
+"Q1","LM7805","TopLayer","LM7805","1885.827","2255.906","180",""
+"MH4","MH_7.4MMNC_3.2MMD (NO COPPER-NPTH)","TopLayer","MH_7.4MMC_3.2MMD_NO_COPPER_NPTH","157.480","2598.425","0",""
+"U2","GYROSCOPE","TopLayer","GYROSCOPE","1985.827","1400.787","270",""
+"J5","MHDR_8PINS","TopLayer","MHDR_8PINS","-1968.504","-1968.504","180",""
+"J4","Female_Headers_Stepper","TopLayer","FEMALE_STEPPER","-1968.504","-1968.504","180",""
+"J1","Terminal Block 2","TopLayer","TERMINAL_BLOCK_2","1039.370","2511.811","180",""
+"J2","MHDR_4PINS","TopLayer","MHDR_4PINS","1898.819","137.795","0",""
+"J3","MHDR_4PINS","TopLayer","MHDR_4PINS","556.299","137.795","0",""
+"U3","DRV8825 Stepper Driver","TopLayer","DRV8825_STEPPER_DRIVER","536.614","631.890","270",""
+"U4","DRV8825 Stepper Driver","TopLayer","DRV8825_STEPPER_DRIVER","1917.717","612.205","270",""
+"U1","ESP_32","TopLayer","ESP_32","3023.622","1011.024","0",""

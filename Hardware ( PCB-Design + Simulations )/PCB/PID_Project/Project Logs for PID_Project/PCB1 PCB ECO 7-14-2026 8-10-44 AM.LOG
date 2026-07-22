@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=EN_R Pin=U3-1
+Removed Pin From Net: NetName=EN_L Pin=U4-1
+Added Pin To Net: NetName=EN_L Pin=U3-1
+Added Pin To Net: NetName=EN_R Pin=U4-1
+Change Net Name : Old Net Name=A1-L New Net Name=A1-R
+Change Net Name : Old Net Name=A1-R New Net Name=A1-L
+Change Net Name : Old Net Name=A2-L New Net Name=A2-R
+Change Net Name : Old Net Name=A2-R New Net Name=A2-L
+Change Net Name : Old Net Name=B1-L New Net Name=B1-R
+Change Net Name : Old Net Name=B1-R New Net Name=B1-L
+Change Net Name : Old Net Name=B2-L New Net Name=B2-R
+Change Net Name : Old Net Name=B2-R New Net Name=B2-L
+Change Net Name : Old Net Name=DIR_LEFT New Net Name=DIR_RIGHT
+Change Net Name : Old Net Name=DIR_RIGHT New Net Name=DIR_LEFT
+Change Net Name : Old Net Name=STEP_LEFT New Net Name=STEP_RIGHT
+Change Net Name : Old Net Name=STEP_RIGHT New Net Name=STEP_LEFT

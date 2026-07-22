@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J4
+Added Member To Class: ClassName=Sheet1 Member=Component J1 Female_Headers_Stepper
+Added Member To Class: ClassName=Sheet1 Member=Component J2 Female_Headers_Stepper
+Added Member To Class: ClassName=Sheet1 Member=Component J3 Female_Headers_Stepper
+Add Class Member: Failed to add class member : Component U2 DRV8825 Stepper Driver
+Add Class Member: Failed to add class member : Component U3 DRV8825 Stepper Driver

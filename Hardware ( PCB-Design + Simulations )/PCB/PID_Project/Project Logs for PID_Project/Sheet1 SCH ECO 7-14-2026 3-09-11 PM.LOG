@@ -1,0 +1,4 @@
+Change Net Color : Net Name= +12V Old Net Color=Default New Net Color=RGB(255, 156, 0)
+Change Net Color : Net Name= GND Old Net Color=Default New Net Color=RGB(45, 27, 62)
+Change Net Color : Net Name= NetC5_P Old Net Color=Default New Net Color=RGB(218, 36, 103)
+Change Net Color : Net Name= Vsupply Old Net Color=Default New Net Color=RGB(218, 36, 103)

@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C2 NewDesignator=C1
+Change Component Designator: OldDesignator=J5 NewDesignator=J3
+Change Component Designator: OldDesignator=J6 NewDesignator=J2
+Change Component Designator: OldDesignator=J7 NewDesignator=J1
+Change Component Designator: OldDesignator=J8 NewDesignator=J4
+Change Component Designator: OldDesignator=J9 NewDesignator=J5
+Change Component Designator: OldDesignator=U2 NewDesignator=U3
+Change Component Designator: OldDesignator=U3 NewDesignator=U4
+Change Component Designator: OldDesignator=U4 NewDesignator=U2
+Added Component: Designator=J6(Female_STEPPER)
+Added Component: Designator=J7(Female_STEPPER)
+Added Component: Designator=J8(Female_STEPPER)
+Added Component: Designator=J9(Female_STEPPER)
+Added Component: Designator=Q1(LM7805)
+Added Component: Designator=R1(2K2R)
+Added Component: Designator=R2(3K3R)
+Added Component: Designator=Socket1(Female_headers)
+Added Component: Designator=Socket2(Female_headers)

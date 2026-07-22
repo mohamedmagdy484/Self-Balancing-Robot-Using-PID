@@ -1,0 +1,5 @@
+Added Component: Designator=U2(DRV8825 Stepper Driver)
+Added Component: Designator=U3(DRV8825 Stepper Driver)
+Added Member To Class: ClassName=Sheet1 Member=Component J4 Female_Headers_Stepper
+Added Member To Class: ClassName=Sheet1 Member=Component U2 DRV8825 Stepper Driver
+Added Member To Class: ClassName=Sheet1 Member=Component U3 DRV8825 Stepper Driver

@@ -1,0 +1,6 @@
+Added Component: Designator=C1(Cap_1µF)
+Added Component: Designator=C2(Cap_1µF)
+Added Pin To Net: NetName=GND Pin=C1-N
+Added Pin To Net: NetName=Vsupply Pin=C1-P
+Added Pin To Net: NetName=GND Pin=C2-N
+Added Pin To Net: NetName=Vsupply Pin=C2-P

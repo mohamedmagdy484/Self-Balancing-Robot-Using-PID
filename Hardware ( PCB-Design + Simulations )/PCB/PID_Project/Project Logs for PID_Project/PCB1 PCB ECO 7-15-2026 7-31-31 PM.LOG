@@ -1,0 +1,5 @@
+Added Component: Designator=J11(MHDR_4PINS)
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=+3V3 Pin=J11-2
+Added Pin To Net: NetName=SCL Pin=J11-3
+Added Pin To Net: NetName=SDA Pin=J11-4
