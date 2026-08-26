@@ -12,7 +12,7 @@ An end-to-end mechatronics and control systems project featuring an inverted pen
 ## 📸 Final Hardware Overview
 
 <p align="center">
-  <img src="./Final_Product_2.jpg" alt="Final Assembled PCB" width="700"/>
+<img width="1200" height="1600" alt="Final_Product" src="https://github.com/user-attachments/assets/92a40ba5-4718-414d-9753-377bbd1bab9a" />
   <br>
   <i><b>Figure 1:</b> Assembled Custom Control Board matched against the Altium Designer 3D Model.</i>
 </p>
@@ -73,7 +73,7 @@ Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
 Initial verification of the MPU6050 complementary/Kalman filter, ESP32 timer interrupts, and stepper driver signals was executed on a breadboard.
 
 <p align="center">
-  <img src="./Bread_Board.jpg" alt="Breadboard Prototype" width="650"/>
+<img width="1200" height="1600" alt="Bread_Board" src="https://github.com/user-attachments/assets/4d6182e0-e4d4-4ac3-9324-3c2cd893c264" />
   <br>
   <i><b>Figure 2:</b> Initial proof-of-concept setup testing power distribution and sensor reading.</i>
 </p>
@@ -84,8 +84,8 @@ Initial verification of the MPU6050 complementary/Kalman filter, ESP32 timer int
 To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicated 100x70 mm PCB was designed in **Altium Designer**.
 
 <p align="center">
-  <img src="./3D_ISO_2.png" alt="3D Isometric View" width="48%"/>
-  <img src="./Screenshot%202026-08-07%20010718_2.png" alt="3D Top View" width="48%"/>
+<img width="683" height="637" alt="3D_ISO" src="https://github.com/user-attachments/assets/e57b9a8c-a904-43f9-8bdd-b169c0932725" />
+<img width="826" height="600" alt="Screenshot 2026-08-07 010718" src="https://github.com/user-attachments/assets/27841f33-8b95-4ea6-b379-f4678af586d5" />
 </p>
 <p align="center">
   <i><b>Figure 3 & 4:</b> 3D Isometric View and 3D Top Render in Altium Designer.</i>
@@ -93,16 +93,18 @@ To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicat
 
 #### Custom Silk & Routing Layout
 <p align="center">
-  <img src="./3D_BACK_2.png" alt="3D Back Silkscreen" width="31%"/>
-  <img src="./Top_Layer_2.png" alt="Top Layer Traces" width="31%"/>
-  <img src="./All_Layers_2.png" alt="All Layers Layout" width="31%"/>
+<img width="1147" height="727" alt="3D_BACK" src="https://github.com/user-attachments/assets/6ad0b2ac-857d-4736-a41a-1d179b7b03ed" />
+<img width="1240" height="721" alt="All_Layers" src="https://github.com/user-attachments/assets/de09e98b-c719-479e-ba5c-454de4500179" />
+="686" alt="Top_Layer" src="https://github.com/user-attachments/assets/e039e3d2-e3bd-46b2-b22a-b3e5c1d8f7d8" />
+  <img width="1240" height<img width="1237" height="677" alt="Bottom_Layer" src="https://github.com/user-attachments/assets/46cdb7e1-74c5-493b-a336-b9de7e799e73" />
+
 </p>
 <p align="center">
   <i><b>Figure 5, 6 & 7:</b> Bottom Silkscreen with team signatures (Left), 2D Top Layer Routing (Center), Composite Layer View with dimensions (Right).</i>
 </p>
 
 <p align="center">
-  <img src="./No_3d_2.png" alt="2D Board Outline" width="55%"/>
+<img width="807" height="562" alt="No_3d" src="https://github.com/user-attachments/assets/a13d5d39-71d0-4a3f-8356-29071a9bdae7" />
   <br>
   <i><b>Figure 8:</b> 2D Board Footprint and Component Alignment.</i>
 </p>
@@ -113,8 +115,9 @@ To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicat
 The fabricated bare board was thoroughly tested for trace continuity before soldering the through-hole and SMD components.
 
 <p align="center">
-  <img src="./984420ef-7dd9-46e1-91b4-36250dbad386_2.jpg" alt="Bare vs Assembled PCB" width="48%"/>
-  <img src="./No_3d%20FABRICATION_2.jpg" alt="Fabricated Board Alignment" width="48%"/>
+<img width="1200" height="1600" alt="984420ef-7dd9-46e1-91b4-36250dbad386" src="https://github.com/user-attachments/assets/a7daa777-cecb-4244-be90-077449e1e2cb" />
+  <img width="1360" height="1600" alt="No_3d FABRICATION" src="https://github.com/user-attachments/assets/062d0b7c-1037-4f44-8334-7de30b68eda9" />
+<img width="900" height="1600" alt="ap" src="https://github.com/user-attachments/assets/f4fc81c4-d1f5-4db8-98ea-a3543320a125" />
 </p>
 <p align="center">
   <i><b>Figure 9 & 10:</b> Bare PCB next to fully soldered PCB (Left); Fabricated board physical verification over CAD layout (Right).</i>
