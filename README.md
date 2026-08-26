@@ -29,7 +29,6 @@ https://github.com/user-attachments/assets/dce35a30-ec2d-499b-bb23-894720cfa175
 
 
 
-*(Note: To display the video directly inside GitHub README, upload your `.mp4` file directly in the editor or convert a short clip into a `.gif` and embed it using `![Demo](demo.gif)`)*
 
 ---
 
