@@ -1,9 +1,6 @@
 # ⚙️ Two-Wheeled Self-Balancing Robot — Mechanical Design & Hardware
 
-![CAD Software](https://img.shields.io/badge/CAD-SolidWorks-blue?style=for-the-badge&logo=solidworks)
-![Manufacturing](https://img.shields.io/badge/Fabrication-3D%20Printing%20%2F%20Laser%20Cut-orange?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Chassis-Multi--Tier%20Stacked-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Mechanical%20Phase-Completed-success?style=for-the-badge)
+
 
 A robust, modular, multi-tier mechanical chassis engineered specifically for an inverted pendulum **Self-Balancing Robot**. Built upon dynamic stabilization principles, the chassis utilizes a vertical stacked design to elevate the Center of Gravity (CoG), optimizing real-time PID responsiveness while delivering a stable platform for embedded control electronics.
 
@@ -12,11 +9,9 @@ A robust, modular, multi-tier mechanical chassis engineered specifically for an 
 ## 📸 Hardware & CAD Overview
 
 <p align="center">
-  <img src="8.jpeg" width="45%" alt="SolidWorks 3D CAD Render" />
-  <img src="5.jpg" width="45%" alt="Assembled Robot Hardware" />
-  <br>
-  <i><b>Figure 1:</b> SolidWorks 3D CAD Model (`8.jpeg`) matched against the fully assembled physical prototype (`5.jpg`).</i>
-</p>
+<img width="744" height="645" alt="8" src="https://github.com/user-attachments/assets/a30a0735-8840-44b4-affa-04bdcc9a1e4e" />
+<img width="720" height="1280" alt="5" src="https://github.com/user-attachments/assets/3741b069-9dda-4ac0-9b98-50e9efa8f887" />
+
 
 ---
 
