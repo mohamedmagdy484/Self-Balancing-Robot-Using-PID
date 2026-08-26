@@ -1,148 +1,120 @@
-# 🤖 Two-Wheeled Self-Balancing Robot (ESP32 + Custom PCB)
+# ⚙️ Two-Wheeled Self-Balancing Robot — Mechanical Design & Hardware
 
-![ESP32](https://img.shields.io/badge/Microcontroller-ESP32-blue?style=for-the-badge&logo=expressif)
-![Altium Designer](https://img.shields.io/badge/PCB%20Design-Altium%20Designer-gold?style=for-the-badge&logo=altiumdesigner)
-![Control System](https://img.shields.io/badge/Control-PID%20Algorithm-red?style=for-the-badge)
-![Status](https://img.shields.io/badge/Phase%201-Completed-success?style=for-the-badge)
+![CAD Software](https://img.shields.io/badge/CAD-SolidWorks-blue?style=for-the-badge&logo=solidworks)
+![Manufacturing](https://img.shields.io/badge/Fabrication-3D%20Printing%20%2F%20Laser%20Cut-orange?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Chassis-Multi--Tier%20Stacked-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Mechanical%20Phase-Completed-success?style=for-the-badge)
 
-An end-to-end mechatronics and control systems project featuring an inverted pendulum **Self-Balancing Robot**. The system utilizes a custom-designed **100x70 mm 2-Layer PCB**, high-speed **ESP32 control loop**, **MPU6050 6-axis IMU**, and dual stepper motor drivers to maintain real-time dynamic balance via PID feedback control.
+A robust, modular, multi-tier mechanical chassis engineered specifically for an inverted pendulum **Self-Balancing Robot**. Built upon dynamic stabilization principles, the chassis utilizes a vertical stacked design to elevate the Center of Gravity (CoG), optimizing real-time PID responsiveness while delivering a stable platform for embedded control electronics.
 
 ---
 
-## 📸 Final Hardware Overview
+## 📸 Hardware & CAD Overview
 
 <p align="center">
-<img width="1200" height="1600" alt="Final_Product" src="https://github.com/user-attachments/assets/92a40ba5-4718-414d-9753-377bbd1bab9a" />
+  <img width="400" alt="SolidWorks 3D CAD Render" src="https://github.com/user-attachments/assets/a30a0735-8840-44b4-affa-04bdcc9a1e4e" />
+  <img width="380" alt="Assembled Robot Hardware" src="https://github.com/user-attachments/assets/3741b069-9dda-4ac0-9b98-50e9efa8f887" />
   <br>
-  <i><b>Figure 1:</b> Assembled Custom Control Board matched against the Altium Designer 3D Model.</i>
+  <i><b>Figure 1:</b> SolidWorks 3D CAD Model (Left) matched against the assembled physical prototype (Right).</i>
 </p>
-
----
-
-## 🎥 Video Demonstration
-
-Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
-https://github.com/user-attachments/assets/dce35a30-ec2d-499b-bb23-894720cfa175
-
-* 📹 **[Watch Demonstration Video on Google Drive](https://drive.google.com/drive/folders/1tvHIlpAVQ2EQqLJnxOTqIaO8B6XP8_57?usp=sharing)**
-
-
-
-
 
 ---
 
 ## 📌 Table of Contents
-1. [Project Highlights](#-project-highlights)
-2. [Technical Specifications](#-technical-specifications)
-3. [Development & Hardware Evolution](#-development--hardware-evolution)
-   - [Phase 1: Breadboard Prototyping](#1-breadboard-prototyping)
-   - [Phase 2: Altium PCB Design & Routing](#2-altium-pcb-design--3d-modeling)
-   - [Phase 3: PCB Fabrication & Assembly](#3-fabrication--assembly)
-4. [Hardware Component Breakdown](#-hardware-component-breakdown)
-5. [Future Enhancements (Phase 2)](#-future-enhancements-phase-2)
+1. [Mechanical Highlights](#-mechanical-highlights)
+2. [Technical Specifications & BOM](#-technical-specifications--bom)
+3. [Design & Assembly Evolution](#-design--assembly-evolution)
+   - [Phase 1: SolidWorks CAD Modeling](#1-solidworks-cad-modeling)
+   - [Phase 2: Structural Framing & Assembly](#2-structural-framing--assembly)
+   - [Phase 3: Actuator & Power Integration](#3-actuator--power-integration)
+4. [Mechanical Component Breakdown](#-mechanical-component-breakdown)
+5. [Future Enhancements](#-future-enhancements)
 6. [The Engineering Team](#-the-engineering-team)
 
 ---
 
-## ⚡ Project Highlights
+## ⚡ Mechanical Highlights
 
-* **High-Speed Control Loop:** Powered by the dual-core **ESP32** running at 240 MHz for fast PID calculation and precise step generation.
-* **Noise Isolation & Decoupling:** Heavy onboard electrolytic decoupling capacitors and ground planes to suppress high-current motor switching noise.
-* **System Protection:** Integrated 5x20mm glass inline fuse holder (`BLX-A`) and reverse polarity protection logic.
-* **Modular Interface:** Onboard OLED screen header for interactive UI, real-time telemetry, and status feedback.
-* **Custom Silkscreen Design:** Custom signature branding engraved directly onto the bottom copper/silk layer.
+* **Elevated Center of Gravity (CoG):** Battery pack intentionally mounted on the top tier to increase the moment of inertia, making balance corrections smoother for the PID loop.
+* **Rigid Threaded Rod Pillars:** Utilizes continuous threaded steel rods with locking hex nuts for high structural rigidity and customizable tier spacing.
+* **Direct-Drive Stepper Mounts:** Dual NEMA 17 stepper motors mounted low at the chassis base to minimize unwanted vibration and provide direct torque transmission.
+* **Modular Electronics Bay:** Middle plate features pre-calculated mounting hole patterns for the custom ESP32 control board and MPU6050 IMU sensor.
+* **High-Traction Drive System:** Heavy-duty rubber tires coupled with precision brass shaft adapters to eliminate rotational backlash during rapid direction flips.
 
 ---
 
-## 🛠️ Technical Specifications
+## 🛠️ Technical Specifications & BOM
 
 | Parameter | Specification |
 | :--- | :--- |
-| **Main Controller** | ESP32-WROOM-32 (30-Pin Dev Module) |
-| **Sensor (IMU)** | MPU6050 (3-Axis Accelerometer + 3-Axis Gyroscope) |
-| **Motor Drivers** | Dual A4988 / DRV8825 Stepper Drivers with Aluminium Heatsinks |
-| **Actuators** | 2x NEMA 17 Stepper Motors |
-| **Board Dimensions** | 100 mm x 70 mm (Double Layer FR4) |
-| **Power Source** | 3x 18650 Li-ion Battery Pack (~11.1V - 12.6V Nominal) |
-| **Display Header** | 4-Pin I2C Header for 0.96" OLED Display |
-| **CAD Software** | Altium Designer v25 |
+| **CAD Tool** | SolidWorks 2024 |
+| **Chassis Architecture** | 3-Tier Vertical Stacked System |
+| **Plate Materials** | 3D Printed PLA (3mm Thickness) |
+| **Structural Frame** | 4x M4 Threaded Steel Rods with Lock Nuts |
+| **Actuators** | 2x NEMA 17 Stepper Motors (1.8° Step Angle) |
+| **Wheels & Tires** | 65mm High-Grip Off-Road Rubber Tires |
+| **Shaft Coupling** | 5mm-to-Hex Brass Rigid Shaft Couplers |
+| **Power Mounting** | Top-tier 4x 18650 Li-ion Battery Enclosure |
 
 ---
 
-## 🔬 Development & Hardware Evolution
+## 🔬 Design & Assembly Evolution
 
-### 1. Breadboard Prototyping
-Initial verification of the MPU6050 complementary/Kalman filter, ESP32 timer interrupts, and stepper driver signals was executed on a breadboard.
+### 1. SolidWorks CAD Modeling
+The complete assembly was designed in **SolidWorks** to verify motor clearances, weight distribution, and sensor placement before fabrication.
 
 <p align="center">
-<img width="1200" height="1600" alt="Bread_Board" src="https://github.com/user-attachments/assets/4d6182e0-e4d4-4ac3-9324-3c2cd893c264" />
+  <img width="380" alt="3D CAD Front View" src="https://github.com/user-attachments/assets/66ee1d01-b30d-45e3-94cd-325f9e04cd9e" />
+  <img width="280" alt="3D CAD Side View" src="https://github.com/user-attachments/assets/e7f98fa6-05b5-4d00-bee6-2dfaea693a97" />
+</p>
+<p align="center">
+  <img width="380" alt="3D CAD Isometric Perspective" src="https://github.com/user-attachments/assets/96687c58-1e85-4f20-89a2-cb7d215931ca" />
+  <img width="380" alt="3D CAD Rear Perspective" src="https://github.com/user-attachments/assets/613a74a7-f68f-42a5-a344-3e3629734ffa" />
   <br>
-  <i><b>Figure 2:</b> Initial proof-of-concept setup testing power distribution and sensor reading.</i>
+  <i><b>Figures 2, 3, 4 & 5:</b> SolidWorks 3D models displaying front, side, and isometric perspectives.</i>
 </p>
 
 ---
 
-### 2. Altium PCB Design & 3D Modeling
-To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicated 100x70 mm PCB was designed in **Altium Designer**.
+### 2. Structural Framing & Assembly
+Assembly of the vertical skeleton using threaded steel rods, enabling easy height adjustments between the power, electronics, and drive tiers.
 
 <p align="center">
-<img width="683" height="637" alt="3D_ISO" src="https://github.com/user-attachments/assets/e57b9a8c-a904-43f9-8bdd-b169c0932725" />
-<img width="826" height="600" alt="Screenshot 2026-08-07 010718" src="https://github.com/user-attachments/assets/27841f33-8b95-4ea6-b379-f4678af586d5" />
-</p>
-<p align="center">
-  <i><b>Figure 3 & 4:</b> 3D Isometric View and 3D Top Render in Altium Designer.</i>
-</p>
-
-#### Custom Silk & Routing Layout
-<p align="center">
-<img width="1147" height="727" alt="3D_BACK" src="https://github.com/user-attachments/assets/6ad0b2ac-857d-4736-a41a-1d179b7b03ed" />
-<img width="1240" height="721" alt="All_Layers" src="https://github.com/user-attachments/assets/de09e98b-c719-479e-ba5c-454de4500179" />
-="686" alt="Top_Layer" src="https://github.com/user-attachments/assets/e039e3d2-e3bd-46b2-b22a-b3e5c1d8f7d8" />
-  <img width="1240" height<img width="1237" height="677" alt="Bottom_Layer" src="https://github.com/user-attachments/assets/46cdb7e1-74c5-493b-a336-b9de7e799e73" />
-
-</p>
-<p align="center">
-  <i><b>Figure 5, 6 & 7:</b> Bottom Silkscreen with team signatures (Left), 2D Top Layer Routing (Center), Composite Layer View with dimensions (Right).</i>
-</p>
-
-<p align="center">
-<img width="807" height="562" alt="No_3d" src="https://github.com/user-attachments/assets/a13d5d39-71d0-4a3f-8356-29071a9bdae7" />
+  <img width="380" alt="Battery Mount Top Tier" src="https://github.com/user-attachments/assets/d0d589c7-3343-4f9e-96ec-bb47719a6477" />
+  <img width="380" alt="Chassis Frame Assembly" src="https://github.com/user-attachments/assets/c5275308-f29f-463e-aa61-ac852e823080" />
   <br>
-  <i><b>Figure 8:</b> 2D Board Footprint and Component Alignment.</i>
+  <i><b>Figures 6 & 7:</b> Battery mount assembly (Left) and continuous threaded rod frame alignment (Right).</i>
 </p>
 
 ---
 
-### 3. Fabrication & Assembly
-The fabricated bare board was thoroughly tested for trace continuity before soldering the through-hole and SMD components.
+### 3. Actuator & Power Integration
+Final mounting of NEMA 17 stepper motors, brass couplers, high-traction wheels, and PCB standoffs.
 
 <p align="center">
-<img width="1200" height="1600" alt="984420ef-7dd9-46e1-91b4-36250dbad386" src="https://github.com/user-attachments/assets/a7daa777-cecb-4244-be90-077449e1e2cb" />
-  <img width="1360" height="1600" alt="No_3d FABRICATION" src="https://github.com/user-attachments/assets/062d0b7c-1037-4f44-8334-7de30b68eda9" />
-<img width="900" height="1600" alt="ap" src="https://github.com/user-attachments/assets/f4fc81c4-d1f5-4db8-98ea-a3543320a125" />
-</p>
-<p align="center">
-  <i><b>Figure 9 & 10:</b> Bare PCB next to fully soldered PCB (Left); Fabricated board physical verification over CAD layout (Right).</i>
+  <img width="380" alt="Assembled Robot Side View" src="https://github.com/user-attachments/assets/5b107583-abff-4314-bcdf-414e1efa1558" />
+  <img width="380" alt="Drive Base Assembly" src="https://github.com/user-attachments/assets/7346ec8b-8199-4fea-845b-0368b9d24f91" />
+  <br>
+  <i><b>Figures 8 & 9:</b> Fully assembled physical robot (Left) and base drive subsystem with motors (Right).</i>
 </p>
 
 ---
 
-## 🔌 Hardware Component Breakdown
+## 🔌 Mechanical Component Breakdown
 
-1. **ESP32 Development Board:** Executes high-speed control loops and calculates target stepper pulse rates.
-2. **MPU6050 IMU:** Positioned near the board center to minimize angular acceleration distortion.
-3. **A4988 / DRV8825 Drivers:** Equipped with individual heat sinks and decoupling capacitors (`C1`, `C2`) near power pins to suppress inductive kickback.
-4. **BLX-A Fuse Protection:** Inline protection preventing overcurrent damage from motor stalls.
-5. **LM7805 / Voltage Regulator:** Provides clean power step-down for logic components.
+1. **Top Tier (Power Unit):** Holds the 18650 battery holder at the maximum vertical position to optimize inverted pendulum physics.
+2. **Middle Tier (Control Platform):** Houses the ESP32 main PCB, MPU6050 IMU, and OLED telemetry display.
+3. **Bottom Tier (Drive Unit):** Direct structural housing for two NEMA 17 motors using M3 mounting fasteners.
+4. **Threaded Rod Pillars:** Continuous steel rods acting as the central load-bearing skeleton.
+5. **Wheel Assemblies:** High-grip wheels locked directly onto motor shafts via brass set-screw couplers.
 
 ---
 
-## 🎯 Future Enhancements (Phase 2)
+## 🎯 Future Enhancements
 
-- [ ] **Interactive OLED UI:** Adding dynamic status faces, battery voltage monitoring, and PID parameter tuning menus.
-- [ ] **Wireless Remote Control:** Implementing ESP-NOW / Wi-Fi / Bluetooth web server control for real-time steering and motion control.
-- [ ] **Adaptive PID Tuning:** Implementing online auto-tuning for varying surface friction and payload changes.
+- [ ] **Protective Chassis Shell:** Lightweight 3D-printed outer cover to protect electronics during fall testing.
+- [ ] **Aluminum Plate Upgrade:** Replacing PLA plates with 2mm CNC aluminum for maximum durability.
+- [ ] **Dampened Sensor Mount:** Adding rubber anti-vibration grommets under the MPU6050 mount to filter out high-frequency motor noise.
 
 ---
 
@@ -150,13 +122,13 @@ The fabricated bare board was thoroughly tested for trace continuity before sold
 
 | Name | Role & Responsibilities |
 | :--- | :--- |
-| **Mohamed Magdy** | Hardware Engineering, PCB Design (Altium) & Embedded Systems |
-| **Omar Elkady** | Control Theory, PID Algorithms & Embedded Logic |
-| **Mohamed Assad** | System Calibration, Sensor Fusion & Embedded Systems |
-| **Wagdy Mohamed** | Mechanical CAD Design & Structure Assembly |
+| **Wagdy Mohamed** | Mechanical CAD Design, Assembly & Physical Prototyping |
+| **Mohamed Magdy** | PCB Engineering & Hardware Design |
+| **Omar Elkady** | Control Systems & Embedded PID Logic |
+| **Mohamed Assad** | Sensor Fusion & System Calibration |
 
 ---
 
 <p align="center">
-  <i>Developed for the College Control Systems Course — Bridging Theory & Practical Engineering 🚀</i>
+  <i>Designed & Fabricated for the Mechatronics & Control Systems Engineering Course 🚀</i>
 </p>
