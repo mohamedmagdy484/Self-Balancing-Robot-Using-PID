@@ -22,8 +22,12 @@ An end-to-end mechatronics and control systems project featuring an inverted pen
 ## 🎥 Video Demonstration
 
 Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
+https://github.com/user-attachments/assets/dce35a30-ec2d-499b-bb23-894720cfa175
 
 * 📹 **[Watch Demonstration Video on Google Drive](https://drive.google.com/drive/folders/1tvHIlpAVQ2EQqLJnxOTqIaO8B6XP8_57?usp=sharing)**
+
+
+
 
 *(Note: To display the video directly inside GitHub README, upload your `.mp4` file directly in the editor or convert a short clip into a `.gif` and embed it using `![Demo](demo.gif)`)*
 
