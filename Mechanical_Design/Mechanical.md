@@ -44,7 +44,7 @@ A robust, modular, multi-tier mechanical chassis engineered specifically for an 
 | :--- | :--- |
 | **CAD Tool** | SolidWorks 2024 |
 | **Chassis Architecture** | 3-Tier Vertical Stacked System |
-| **Plate Materials** | Laser-Cut Acrylic / 3D Printed PLA (3mm Thickness) |
+| **Plate Materials** |  3D Printed PLA (3mm Thickness) |
 | **Structural Frame** | 4x M4 Threaded Steel Rods with Lock Nuts |
 | **Actuators** | 2x NEMA 17 Stepper Motors (1.8° Step Angle) |
 | **Wheels & Tires** | 65mm High-Grip Off-Road Rubber Tires |
@@ -59,11 +59,14 @@ A robust, modular, multi-tier mechanical chassis engineered specifically for an 
 The complete assembly was designed in **SolidWorks** to verify motor clearances, weight distribution, and sensor placement before fabrication.
 
 <p align="center">
-  <img src="9.jpeg" width="45%" alt="3D Front View" />
-  <img src="1.jpg" width="35%" alt="3D Side View" />
+<img width="600" height="631" alt="9" src="https://github.com/user-attachments/assets/66ee1d01-b30d-45e3-94cd-325f9e04cd9e" />
+<img width="418" height="596" alt="1" src="https://github.com/user-attachments/assets/e7f98fa6-05b5-4d00-bee6-2dfaea693a97" />
+
 </p>
 <p align="center">
-  <i><b>Figures 2 & 3:</b> SolidWorks 3D Front View (`9.jpeg`) and Side Elevation (`1.jpg`).</i>
+<img width="900" height="1600" alt="2" src="https://github.com/user-attachments/assets/96687c58-1e85-4f20-89a2-cb7d215931ca" />
+<img width="617" height="577" alt="3" src="https://github.com/user-attachments/assets/613a74a7-f68f-42a5-a344-3e3629734ffa" />
+
 </p>
 
 ---
@@ -72,11 +75,10 @@ The complete assembly was designed in **SolidWorks** to verify motor clearances,
 Assembly of the vertical skeleton using threaded steel rods, enabling easy height adjustments between the power, electronics, and drive tiers.
 
 <p align="center">
-  <img src="6.jpg" width="45%" alt="Bare Structural Frame" />
-  <img src="2.jpg" width="45%" alt="Top Tier Battery Mount" />
+<img width="900" height="1600" alt="2" src="https://github.com/user-attachments/assets/d0d589c7-3343-4f9e-96ec-bb47719a6477" />
+<img width="900" height="1600" alt="6" src="https://github.com/user-attachments/assets/c5275308-f29f-463e-aa61-ac852e823080" />
 </p>
 <p align="center">
-  <i><b>Figures 4 & 5:</b> Initial chassis alignment frame (`6.jpg`) and top-tier battery holder mounting (`2.jpg`).</i>
 </p>
 
 ---
@@ -85,8 +87,8 @@ Assembly of the vertical skeleton using threaded steel rods, enabling easy heigh
 Final mounting of NEMA 17 stepper motors, brass couplers, high-traction wheels, and PCB standoffs.
 
 <p align="center">
-  <img src="7.jpeg" width="45%" alt="Drive Subsystem" />
-  <img src="4.jpg" width="45%" alt="Completed Mechanical Build Side View" />
+<img width="720" height="1280" alt="4" src="https://github.com/user-attachments/assets/5b107583-abff-4314-bcdf-414e1efa1558" />
+<img width="900" height="1600" alt="7" src="https://github.com/user-attachments/assets/7346ec8b-8199-4fea-845b-0368b9d24f91" />
 </p>
 <p align="center">
   <i><b>Figures 6 & 7:</b> Base drive assembly with stepper motors (`7.jpeg`) and fully wired physical robot side view (`4.jpg`).</i>
