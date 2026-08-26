@@ -1,9 +1,9 @@
 # 🤖 Two-Wheeled Self-Balancing Robot (ESP32 + Custom PCB)
 
-[![ESP32](https://img.shields.io/badge/Microcontroller-ESP32-blue?style=for-the-badge&logo=expressif)](https://www.espressif.com/)
-[![Altium Designer](https://img.shields.io/badge/PCB%20Design-Altium%20Designer-gold?style=for-the-badge&logo=altiumdesigner)](https://www.altium.com/)
-[![Control System](https://img.shields.io/badge/Control-PID%20Algorithm-red?style=for-the-badge)](https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller)
-[![Status](https://img.shields.io/badge/Phase%201-Completed-success?style=for-the-badge)]()
+![ESP32](https://img.shields.io/badge/Microcontroller-ESP32-blue?style=for-the-badge&logo=expressif)
+![Altium Designer](https://img.shields.io/badge/PCB%20Design-Altium%20Designer-gold?style=for-the-badge&logo=altiumdesigner)
+![Control System](https://img.shields.io/badge/Control-PID%20Algorithm-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Phase%201-Completed-success?style=for-the-badge)
 
 An end-to-end mechatronics and control systems project featuring an inverted pendulum **Self-Balancing Robot**. The system utilizes a custom-designed **100x70 mm 2-Layer PCB**, high-speed **ESP32 control loop**, **MPU6050 6-axis IMU**, and dual stepper motor drivers to maintain real-time dynamic balance via PID feedback control.
 
@@ -12,7 +12,7 @@ An end-to-end mechatronics and control systems project featuring an inverted pen
 ## 📸 Final Hardware Overview
 
 <p align="center">
-  <img src="Final_Product_2.jpg" alt="Final Assembled PCB" width="700"/>
+  <img src="./Final_Product_2.jpg" alt="Final Assembled PCB" width="700"/>
   <br>
   <i><b>Figure 1:</b> Assembled Custom Control Board matched against the Altium Designer 3D Model.</i>
 </p>
@@ -37,9 +37,8 @@ Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
    - [Phase 2: Altium PCB Design & Routing](#2-altium-pcb-design--3d-modeling)
    - [Phase 3: PCB Fabrication & Assembly](#3-fabrication--assembly)
 4. [Hardware Component Breakdown](#-hardware-component-breakdown)
-5. [Pinout & System Architecture](#-pinout--system-architecture)
-6. [Future Enhancements (Phase 2)](#-future-enhancements-phase-2)
-7. [The Engineering Team](#-the-engineering-team)
+5. [Future Enhancements (Phase 2)](#-future-enhancements-phase-2)
+6. [The Engineering Team](#-the-engineering-team)
 
 ---
 
@@ -48,7 +47,7 @@ Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
 * **High-Speed Control Loop:** Powered by the dual-core **ESP32** running at 240 MHz for fast PID calculation and precise step generation.
 * **Noise Isolation & Decoupling:** Heavy onboard electrolytic decoupling capacitors and ground planes to suppress high-current motor switching noise.
 * **System Protection:** Integrated 5x20mm glass inline fuse holder (`BLX-A`) and reverse polarity protection logic.
-* **Modular Interface:** Onboard OLED screen connector for interactive UI, real-time telemetry, and status feedback.
+* **Modular Interface:** Onboard OLED screen header for interactive UI, real-time telemetry, and status feedback.
 * **Custom Silkscreen Design:** Custom signature branding engraved directly onto the bottom copper/silk layer.
 
 ---
@@ -74,7 +73,7 @@ Check out Phase 1 in action (Self-Balancing Mode & Dynamic Stability Test):
 Initial verification of the MPU6050 complementary/Kalman filter, ESP32 timer interrupts, and stepper driver signals was executed on a breadboard.
 
 <p align="center">
-  <img src="Bread_Board.jpg" alt="Breadboard Prototype" width="650"/>
+  <img src="./Bread_Board.jpg" alt="Breadboard Prototype" width="650"/>
   <br>
   <i><b>Figure 2:</b> Initial proof-of-concept setup testing power distribution and sensor reading.</i>
 </p>
@@ -85,8 +84,8 @@ Initial verification of the MPU6050 complementary/Kalman filter, ESP32 timer int
 To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicated 100x70 mm PCB was designed in **Altium Designer**.
 
 <p align="center">
-  <img src="3D_ISO_2.png" alt="3D Isometric View" width="48%"/>
-  <img src="Screenshot 2026-08-07 010718_2.png" alt="3D Top View" width="48%"/>
+  <img src="./3D_ISO_2.png" alt="3D Isometric View" width="48%"/>
+  <img src="./Screenshot%202026-08-07%20010718_2.png" alt="3D Top View" width="48%"/>
 </p>
 <p align="center">
   <i><b>Figure 3 & 4:</b> 3D Isometric View and 3D Top Render in Altium Designer.</i>
@@ -94,16 +93,16 @@ To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicat
 
 #### Custom Silk & Routing Layout
 <p align="center">
-  <img src="3D_BACK_2.png" alt="3D Back Silkscreen" width="31%"/>
-  <img src="Top_Layer_2.png" alt="Top Layer Traces" width="31%"/>
-  <img src="All_Layers_2.png" alt="All Layers Layout" width="31%"/>
+  <img src="./3D_BACK_2.png" alt="3D Back Silkscreen" width="31%"/>
+  <img src="./Top_Layer_2.png" alt="Top Layer Traces" width="31%"/>
+  <img src="./All_Layers_2.png" alt="All Layers Layout" width="31%"/>
 </p>
 <p align="center">
   <i><b>Figure 5, 6 & 7:</b> Bottom Silkscreen with team signatures (Left), 2D Top Layer Routing (Center), Composite Layer View with dimensions (Right).</i>
 </p>
 
 <p align="center">
-  <img src="No_3d_2.png" alt="2D Board Outline" width="55%"/>
+  <img src="./No_3d_2.png" alt="2D Board Outline" width="55%"/>
   <br>
   <i><b>Figure 8:</b> 2D Board Footprint and Component Alignment.</i>
 </p>
@@ -114,8 +113,8 @@ To eliminate jumper wire resistance, loose contacts, and signal noise, a dedicat
 The fabricated bare board was thoroughly tested for trace continuity before soldering the through-hole and SMD components.
 
 <p align="center">
-  <img src="984420ef-7dd9-46e1-91b4-36250dbad386_2.jpg" alt="Bare vs Assembled PCB" width="48%"/>
-  <img src="No_3d FABRICATION_2.jpg" alt="Fabricated Board Alignment" width="48%"/>
+  <img src="./984420ef-7dd9-46e1-91b4-36250dbad386_2.jpg" alt="Bare vs Assembled PCB" width="48%"/>
+  <img src="./No_3d%20FABRICATION_2.jpg" alt="Fabricated Board Alignment" width="48%"/>
 </p>
 <p align="center">
   <i><b>Figure 9 & 10:</b> Bare PCB next to fully soldered PCB (Left); Fabricated board physical verification over CAD layout (Right).</i>
